@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.fish {
+  background-image: url(../images/common/fish.png);
+  background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
+  background-repeat: no-repeat;
+  background-position: center;
+  // 都度大きさ調整
+  width: rem(109);
+  height: rem(50);
+  
+  @include mq(md) {
+    width: rem(301);
+    height: rem(138);
+  }
+}
+
+
+.fish--white {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+    background-image: url(../images/common/fish-white.png);
+  }
+}
+
+.fish--reverse {
+  transform: scaleX(-1);
+}
+
+.fish--large {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+    width: rem(437);
+    height: rem(201);
+  }
+}

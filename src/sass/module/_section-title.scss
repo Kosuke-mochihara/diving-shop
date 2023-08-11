@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.section-title {
+  line-height: 1;
+  text-align: center;
+}
+
+.section-title__main {
+  font-family: $gotu-font-family;
+  font-size: rem(32);
+  font-weight: $regular;
+  letter-spacing: 0.04em;
+
+  @include mq(md){
+    font-size: rem(40);
+  }
+}
+
+.section-title__main::first-letter {
+  text-transform: capitalize;  
+  color: $green;
+}
+
+.section-title__sub {
+  font-size: rem(12);
+  font-weight: $regular;
+  letter-spacing: 0.0018em;
+  color: $green;
+}
+
+.section-title--accent{
+  @include mq(md){
+    color: $white;
+  }
+}
+
+.section-title--accent .section-title__main::first-letter {
+  
+  @include mq(md){
+    color: $white;
+  }
+}
+
+.section-title--large .section-title__main {
+  font-size: rem(80);
+  letter-spacing: 0.08em;
+}

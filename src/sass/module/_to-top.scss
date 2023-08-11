@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.to-top {
+  display: inline-block;
+  background-image: url(../images/common/to-top.png);
+  background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
+  background-position: center; 
+  background-repeat: no-repeat;
+  max-width: rem(80);
+  width: 100%;
+  height: rem(80);
+}
