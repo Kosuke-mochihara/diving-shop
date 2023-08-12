@@ -9,7 +9,6 @@
   font-family: $gotu-font-family;
   font-size: rem(32);
   font-weight: $regular;
-  letter-spacing: 0.04em;
 
   @include mq(md){
     font-size: rem(40);
@@ -24,7 +23,6 @@
 .section-title__sub {
   font-size: rem(12);
   font-weight: $regular;
-  letter-spacing: 0.0018em;
   color: $green;
 }
 
@@ -43,5 +41,4 @@
 
 .section-title--large .section-title__main {
   font-size: rem(80);
-  letter-spacing: 0.08em;
 }

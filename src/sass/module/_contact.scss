@@ -1,0 +1,167 @@
+@use "global" as *;
+
+.contact {
+  position: relative;
+}
+
+.contact__fish {
+  position: absolute;
+  max-width: rem(109);
+  width: 100%;
+  max-height: rem(50);
+  height: 100%;
+  right: rem(15);
+  top: rem(31);
+
+  @include mq(md) {
+    max-width: rem(301);
+    max-height: rem(138);
+    right: calc(50% - min(50%, rem(669)));
+    top: rem(-60);
+  }
+}
+
+.contact__inner.inner {
+
+}
+
+.contact__box{
+  padding-top: rem(54);
+  padding-bottom: rem(100);
+
+  @include mq(md) {
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    max-width: rem(1130);
+    width: 100%;
+    margin-inline: auto;
+    padding-top: rem(60);
+    padding-bottom: rem(80);
+  }
+}
+
+.contact__contacts {
+
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.contact__content {
+  text-align: center;
+
+  @include mq(md) {
+    margin-right: rem(82);
+    margin-left: rem(50);
+  }
+
+}
+
+.contact-content:nth-child(n+2) {
+  margin-top: rem(34);
+}
+
+.contact__logo {
+  max-width: rem(174);
+  width: 100%;
+  max-height: rem(65);
+  height: 100%;
+  display: inline-block;
+
+  @include mq(md) {
+    max-width: rem(200);
+    width: 100%;
+    max-height: rem(75);
+    height: 100%;
+  }
+}
+
+.contact__hr {
+  background-color: $green;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  max-width: rem(295);
+  width: 100%;
+
+  @include mq(md) {
+    
+  }
+}
+
+.contact__wrapper {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(21);
+    margin-top: rem(24);
+  }
+}
+
+.contact__address {
+  margin-top: rem(16);
+  font-style: normal;
+  line-height: calc(24/16);
+  font-weight: $regular;
+  text-align: center;
+
+  @include mq(md) {
+  text-align: left;
+    margin-top: 0;
+  }
+}
+
+.contact__text:first-child {
+  margin-left: rem(-9);
+
+  @include mq(md) {
+    margin-left: initial;
+  }
+}
+
+.contact__text:nth-child(n+2) {
+  margin-top: rem(4);
+}
+
+.contact__map {
+  margin-top: rem(16);
+  aspect-ratio: 295 / 160;
+  overflow: hidden;
+  display: inline-block;
+
+  @include mq(md) {
+    width: rem(273);
+    height: rem(148);
+    margin-top: 0;
+  }
+}
+
+.contact__map iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact__contact-box {
+  text-align: center;
+  margin-top: rem(32);
+  @include mq(md) {
+    border-left: 1px solid $green;
+    padding-left: rem(81);
+    margin-top: 0;
+  }
+}
+
+.contact-title {
+
+  @include mq(md) {
+    margin-top: rem(18);
+  }
+}
+
+.contact__information {
+  margin-top: rem(8);
+  font-size: rem(14);
+}
+
+.contact__btn {
+  margin-top: rem(40);
+}

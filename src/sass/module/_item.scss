@@ -1,0 +1,56 @@
+@use "global" as *;
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+
+  @include mq(md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.item__lists {
+  padding-left: rem(22);
+}
+
+.item__lists:nth-child(2) {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+  @include mq(md) {
+    grid-column: initial;
+    grid-row: initial;
+  }
+}
+
+.item__list {}
+
+.item__title {
+  position: relative;
+  font-size: rem(18);
+  line-height: calc(18/16);
+  margin-top: rem(40);
+}
+
+.item__title::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/common/star-fish.png);
+  background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
+  background-position: center; 
+  background-repeat: no-repeat;
+  max-width: rem(18);
+  width: 100%;
+  max-height: rem(18);
+  height: 100%;
+  left: rem(-22);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.item__lv2Lists {}
+
+.item__lv2Item {
+  margin-top: rem(24);
+}

@@ -1,0 +1,51 @@
+@use "global" as *;
+
+$drawer-height: rem(2); //ドロワー線の高さ
+$drawer-color: $white; //ドロワー線の色
+
+.hamburger {
+  z-index: 9999;
+}
+
+.hamburger span {
+  position: relative;
+  display: block;
+  height: $drawer-height;
+  background: $drawer-color;
+  transition: ease .3s;
+}
+
+.hamburger span:nth-child(1) {
+  top: rem(-2);
+  width: rem(32);
+}
+
+.hamburger span:nth-child(2) {
+  margin: rem(9) 0;
+  width: rem(32);
+}
+
+.hamburger span:nth-child(3) {
+  top: rem(2);
+  width: rem(32);
+}
+
+/*is-OPEN時の動き*/
+.hamburger.is-open span:nth-child(1) {
+  top: rem(11);
+  right: rem(-3);
+  transform: rotate(38deg);
+  width: rem(40);
+}
+
+.hamburger.is-open span:nth-child(2) {
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.hamburger.is-open span:nth-child(3) {
+  top: rem(-11);
+  right: rem(-5);
+  transform: rotate(-38deg);
+  width: rem(40);
+}

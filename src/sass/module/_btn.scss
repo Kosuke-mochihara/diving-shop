@@ -8,6 +8,8 @@
   width: 100%;
   max-height: rem(54);
   height: 100%;
+  color: $white;
+  background-color: $green;
 }
 
 .btn:hover .btn__top{
@@ -23,11 +25,9 @@
 .btn__top {
   position: relative;
   content: "";
-  padding-left: rem(40);
-  max-width: rem(202);
+  max-width: rem(162);
   width: 100%;
-  color: $white;
-  background-color: $green;
+
   padding-block: rem(16);
   font-size: rem(14);
   line-height: calc(22/14);
