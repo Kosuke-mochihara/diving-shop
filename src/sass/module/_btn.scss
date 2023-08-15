@@ -1,108 +1,103 @@
 @use "global" as *;
 
+
+
+// btn
+@use "global" as *;
+
 .btn {
-  font-family: $gotu-font-family;
-  display: inline-block;
   position: relative;
-  max-width: rem(202);
-  width: 100%;
-  max-height: rem(54);
-  height: 100%;
+  width: rem(202);
+  height: rem(54);
+  display: inline-block;
+}
+
+.btn:hover  {
+  opacity: 1;
+}
+
+.btn__base {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: rem(14);
+  line-height: rem(54);
+  font-family: $gotu-font-family;
+  text-align: center;
   color: $white;
   background-color: $green;
-}
-
-.btn:hover .btn__top{
-  background-color: $white;
-  color: $green;
-}
-
-.btn:hover .btn__arrow {
-  background-image: url(../images/common/arrow-green.svg);
-    transition: all 0.3s ease;
-}
-
-.btn__top {
-  position: relative;
-  content: "";
-  max-width: rem(162);
+  display: inline-block;
+  transition: .3s ease-in-out;
   width: 100%;
-
-  padding-block: rem(16);
-  font-size: rem(14);
-  line-height: calc(22/14);
-  letter-spacing: 0.022em;
-  transition: 0.3s;
-  border: 1px solid $green;
+  height: 100%;
+  z-index: 100;
 }
 
-.btn__text {
+.btn__base::first-letter{
   text-transform: uppercase;
 }
 
-.btn__top::first-letter {
-  text-transform: capitalize;
-}
-
-.btn__arrow {
-  position: absolute;
-  content: "";
+.btn__base span {
+  position: relative;
+  display: inline-block;
   background-image: url(../images/common/arrow.svg);
-  background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
-  background-position: center; 
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  max-width: rem(40);
-  width: 100%;
-  max-height: rem(6);
-  height: 100%;
-  top: calc(50% - rem(3));
-  transform: translateY(-50%);
-  margin-left: rem(8);
+  width: rem(40);
+  height: rem(6);
+  top: rem(-2);
+  right: rem(-7);
+  transition: .3s ease-in-out;
 }
 
-.btn__bottom {
-  position: absolute;
-  content: "";
-  max-width: rem(202);
-  width: 100%;
-  height: rem(54);
-  border: 1px solid $green;
-  top: rem(4);
-  left: rem(4);
-  z-index: -1;
-  transition: 0.3s;
-}
-
-.btn--send .btn__top {
-  padding-left: rem(56);
-}
-
-.btn--send .btn__arrow {
-  margin-left: rem(16);
-}
-
-.btn--accent .btn__top {
-  background-color: $white;
+.btn:hover .btn__base {
   color: $green;
+  background-color: $white;
+  border: 1px solid $green;
 }
 
-.btn--accent .btn__arrow {
+.btn:hover .btn__base {
+  color: $green;
+  z-index: 100;
+}
+
+.btn:hover .btn__base span {
   background-image: url(../images/common/arrow-green.svg);
 }
 
-.btn--accent .btn__bottom {
+.btn__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: rem(202);
+  height: rem(54);
+  transform: translate(4px, 4px);
+  background-color: transparent;
+  border: 1px solid $green;
+  z-index: 10;
+}
+
+.btn--white .btn__base {
+  color: $green;
+  background-color: $white;
+}
+
+.btn--white:hover .btn__base {
+  color: $white;
+  background-color: $green;
   border: 1px solid $white;
 }
 
-.btn--accent:hover .btn__top {
-  background-color: $green;
-  color: $white;
+.btn--white .btn__base span{
+  background-image: url(../images/common/arrow-green.svg);
 }
 
-.btn--accent:hover .btn__arrow {
+.btn--white:hover .btn__base span{
   background-image: url(../images/common/arrow.svg);
 }
 
-.btn--accent:hover .btn__bottom {
-  border: 1px solid $green;
+.btn--white .btn__shadow {
+  border: 1px solid $white;
 }
