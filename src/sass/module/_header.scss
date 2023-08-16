@@ -44,17 +44,25 @@
 .header__items {
   display: none;
   height: inherit;
+
+  @include mq(mdL) {
+    display: flex;
+    gap: rem(40);
+  }
   
   @include mq(md) {
     display: flex;
-    gap: rem(40);
+    gap: rem(25);
   }
 }
 
 .header__item {
-  color: $white;
-  text-align: center;
-  height: inherit;
+
+  @include mq(md) {
+    color: $white;
+    text-align: center;
+    height: inherit;
+  }
 }
 
 .header__link {
