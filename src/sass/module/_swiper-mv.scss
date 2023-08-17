@@ -1,0 +1,59 @@
+@use "global" as *;
+
+.mv {
+  position: relative;
+}
+
+.mv__contents {
+  height: 100vh;
+  width: 100%;
+}
+
+.mv__content {
+
+}
+
+.swiper-slide {
+
+}
+
+.mv__img {
+
+}
+
+.mv__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.mv__title-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  color: $white;
+  text-align: center;
+}
+
+.mv__title {
+  font-family: $lato-font-family;
+  font-size: rem(40);
+  font-weight: $regular;
+  line-height: calc(100/89);
+  text-transform: uppercase;
+  letter-spacing: 0.54em;
+
+  @include mq(md) {
+   font-size: rem(80);
+  }
+}
+
+.mv__sub-title {
+  font-family: $gotu-font-family;
+  font-size: rem(20);
+  font-weight: $regular;
+  line-height: 1;
+}
+

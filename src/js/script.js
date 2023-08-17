@@ -16,5 +16,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $('.js-drawer-menu').removeClass('is-open');
       $('.js-hamburger').removeClass('is-open');
     });
+    
+
+    const mySwiper = new Swiper('.js-mv .swiper', {
+      slidesPerView: 'auto', // 何枚のカードを表示するか
+      grabCursor: true, // マウスオーバー時にカーソルをグラブ状態にするか
+      simulateTouch: false, // スワイプ操作をPCのブラウザでシミュレートするか
+      loop: true, // ループさせるかどうか
+        autoplay: {
+        delay: 3000, // 2.5秒ごとにスライド
+        disableOnInteraction: false, // ユーザーのスワイプ操作後も自動再生を続行
+      },
+      speed: 3000, // 1秒（1000ミリ秒）かけてスライドが移動する
+    });
 
 });

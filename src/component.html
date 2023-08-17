@@ -26,9 +26,20 @@
       href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- swiper -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+    ></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -258,6 +269,85 @@
       </div>
     </header>
     <main>
+      <h2 class="test">hero</h2>
+      <div class="mv js-mv">
+        <div class="swiper mv__contents">
+          <div class="swiper-wrapper mv__content">
+            <div class="swiper-slide">
+              <picture class="mv__img">
+                <source
+                  srcset="./assets/images/common/mv-img-pc_01.webp"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./assets/images/common/mv-img-pc_01.jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./assets/images/common/mv-img-sp_01.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./assets/images/common/mv-img-sp_01.jpg"
+                  alt="木造の洒落なテラス"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="mv__img">
+                <source
+                  srcset="./assets/images/common/mv-img-pc_02.webp"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./assets/images/common/mv-img-pc_02.jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./assets/images/common/mv-img-sp_02.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./assets/images/common/mv-img-sp_02.jpg"
+                  alt="ファミリーカーと玄関"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="mv__img">
+                <source
+                  srcset="./assets/images/common/mv-img-pc_03.webp"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./assets/images/common/mv-img-pc_03.jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./assets/images/common/mv-img-sp_03.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./assets/images/common/mv-img-sp_03.jpg"
+                  alt="作業を行う男性"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
+          <!-- /swiper-wrapper -->
+        </div>
+        <div class="mv__title-box">
+          <p class="mv__title">diving</p>
+          <p class="mv__sub-title">into the ocean</p>
+        </div>
+      </div>
+
       <h2 class="test">btn</h2>
       <a href="#" class="btn btn--green">
         <div class="btn__base">view more<span></span></div>
