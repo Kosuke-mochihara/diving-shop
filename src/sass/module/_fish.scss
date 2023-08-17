@@ -22,6 +22,9 @@
   @include mq(md) {
     display: block;
     background-image: url(../images/common/fish-white.png);
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
   }
 }
 

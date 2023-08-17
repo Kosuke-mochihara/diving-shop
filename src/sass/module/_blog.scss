@@ -1,0 +1,77 @@
+@use "global" as *;
+
+.blog {
+  position: relative;
+}
+
+.blog__bg {
+
+  @include mq(md) {
+    background-image: url(../images/common/blog-bg.jpg);
+    background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: rem(500);
+    position: absolute;
+    z-index: -100;
+  }
+}
+
+.blog__inner.inner {
+  padding-inline: rem(21);
+}
+
+.blog__title {
+  @include mq(md) {
+    padding-top: rem(100);
+  }
+}
+
+.blog__items {
+  margin-top: rem(32);
+  margin-inline: auto;
+
+  @include mq(md) {
+    margin-top: rem(80);
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.blog__item {}
+
+.blog__item:nth-child(n+2) {
+  margin-top: rem(40);
+
+  @include mq(md) {
+    margin-top: rem(0);
+  }
+}
+
+.blog__btn {
+  text-align: center;
+  margin-top: rem(40);
+
+  @include mq(md) {
+    margin-top: rem(83);
+  }
+}
+
+.blog__fish {
+  max-width: rem(437);
+  width: 100%;
+}
+
+.blog__fish .fish {
+
+  @include mq(md) {
+    position: absolute;
+    top: rem(19);
+    left: calc(50% - rem(620));
+    max-width: rem(437);
+    width: 100%;
+    max-height: rem(201);
+    height: 100%;
+  }
+}

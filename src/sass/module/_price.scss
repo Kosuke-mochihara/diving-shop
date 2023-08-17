@@ -49,10 +49,12 @@
 }
 
 .price__lv2Items {
-  max-width: rem(492);
   width: 100%;
 
-
+  @include mq(md) {
+    max-width: 100%;
+    width: rem(492);
+  }
 }
 
 .price__sub-title {

@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.campaign {}
+
+.campaign__inner {}
+
+.campaign__title {}
+
+.campaign__swiper {
+  margin-top: rem(31);
+  margin-right: calc(50% - 50vw);
+
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.campaign__contents {}
+
+.campaign__content {}
+
+.campaign__slide {
+  max-width: rem(280);
+  width: 100%;
+  height: rem(370);
+
+
+  @include mq(md) {
+    max-width: rem(333);
+    height: rem(450);
+  }
+}
+
+.campaign__button-box .swiper-button-prev::after,
+.campaign__button-box .swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: rem(80);
+  margin: auto;
+  width: rem(80);
+}
+
+.campaign__prev,
+.campaign__next {
+  width: rem(80);
+  height: rem(80);
+}
+
+.campaign__button-box .swiper-button-prev,
+.campaign__button-box .swiper-button-next {
+  top: calc(50% - rem(280));
+}
+
+.campaign__button-box .swiper-button-prev {
+  left: auto;
+  right: rem(340);
+}
+.campaign__button-box .swiper-button-next {
+  left: auto;
+  right: rem(180);
+}
+
+.campaign__btn {
+  text-align: center;
+  margin-top: rem(36);
+
+  @include mq(md) {
+    margin-top: rem(75);
+  }
+}

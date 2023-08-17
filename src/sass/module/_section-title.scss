@@ -40,6 +40,19 @@
   }
 }
 
+.section-title--accent .section-title__sub {
+  
+  @include mq(md){
+    color: $white;
+  }
+}
+
 .section-title--large .section-title__main {
   font-size: rem(80);
+}
+
+.section-title__main--white{
+  @include mq(md) {
+    color: $white;
+  }
 }

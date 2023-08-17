@@ -84,6 +84,12 @@
   }
 }
 
+.campaign-card__contents--left {
+@include mq(md) {
+  margin-left: rem(-24);
+}
+}
+
 .campaign-card__old-price {
 font-size: rem(20);
 font-weight: $bold;
