@@ -31,7 +31,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, calc(-50% - rem(3)));
   z-index: 1000;
   color: $white;
   text-align: center;
@@ -44,9 +44,11 @@
   line-height: calc(100/89);
   text-transform: uppercase;
   letter-spacing: 0.54em;
+  padding-left: rem(21);
 
   @include mq(md) {
    font-size: rem(80);
+   padding-left: rem(43);
   }
 }
 
@@ -55,5 +57,6 @@
   font-size: rem(20);
   font-weight: $regular;
   line-height: 1;
+  margin-top: rem(6);
 }
 

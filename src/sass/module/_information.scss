@@ -1,11 +1,13 @@
 @use "global" as *;
 
 .information {
-  padding-block: rem(84);
+  padding-top: rem(81);
+  padding-bottom: rem(80);
   background-color: #DDF0F1;
 
   @include mq(md) {
-    padding-block: rem(100);
+    padding-top: rem(104);
+    padding-bottom: rem(110);
   }
 }
 
@@ -44,7 +46,7 @@
   margin-top: rem(24);
 
   @include mq(md) {
-    margin-top: rem(6);
+    margin-top: rem(10);
   }
 }
 

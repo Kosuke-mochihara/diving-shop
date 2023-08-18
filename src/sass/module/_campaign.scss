@@ -11,7 +11,8 @@
   margin-right: calc(50% - 50vw);
 
   @include mq(md) {
-    margin-top: rem(40);
+    margin-top: rem(42);
+    position: relative;
   }
 }
 
@@ -49,13 +50,14 @@
 
 .campaign__button-box .swiper-button-prev,
 .campaign__button-box .swiper-button-next {
-  top: calc(50% - rem(280));
+  top: rem(-83);
 }
 
 .campaign__button-box .swiper-button-prev {
   left: auto;
   right: rem(340);
 }
+
 .campaign__button-box .swiper-button-next {
   left: auto;
   right: rem(180);

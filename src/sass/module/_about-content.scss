@@ -57,9 +57,12 @@
 }
 
 .about-content__text-box {
+  margin-top: rem(16);
+
   @include mq(md) {
     width: rem(400);
     max-width: 100%;
+    margin-top: 0;
   }
 }
 
