@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.seahorse {
+  background-image: url(../images/common/seahorse.png);
+  background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
+  background-position: center; 
+  background-repeat: no-repeat;
+  width: rem(71); 
+  height: rem(162);
+}
