@@ -10,13 +10,13 @@
   font-size: rem(32);
   font-weight: $regular;
 
-  @include mq(md){
+  @include mq(md) {
     font-size: rem(40);
   }
 }
 
 .section-title__main::first-letter {
-  text-transform: capitalize;  
+  text-transform: capitalize;
   color: $green;
 }
 
@@ -27,22 +27,22 @@
   color: $green;
 }
 
-.section-title--accent{
-  @include mq(md){
+.section-title--accent {
+  @include mq(md) {
     color: $white;
   }
 }
 
 .section-title--accent .section-title__main::first-letter {
-  
-  @include mq(md){
+
+  @include mq(md) {
     color: $white;
   }
 }
 
 .section-title--accent .section-title__sub {
-  
-  @include mq(md){
+
+  @include mq(md) {
     color: $white;
   }
 }
@@ -51,7 +51,15 @@
   font-size: rem(80);
 }
 
-.section-title__main--white{
+.section-title--large .section-title__sub {
+  margin-top: rem(-4);
+
+  @include mq(md) {
+    margin-top: rem(-2);
+  }
+}
+
+.section-title__main--white {
   @include mq(md) {
     color: $white;
   }

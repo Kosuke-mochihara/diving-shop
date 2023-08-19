@@ -11,7 +11,7 @@
   max-height: rem(50);
   height: 100%;
   right: rem(15);
-  top: rem(31);
+  top: rem(54);
 
   @include mq(md) {
     max-width: rem(301);
@@ -26,7 +26,7 @@
 }
 
 .contact__box{
-  padding-top: rem(54);
+  padding-top: rem(80);
   padding-bottom: rem(100);
 
   @include mq(md) {
@@ -83,7 +83,7 @@
   width: 100%;
 
   @include mq(md) {
-    
+    max-width: 100%;
   }
 }
 

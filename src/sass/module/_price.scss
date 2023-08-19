@@ -2,7 +2,8 @@
 
 .price {
   background-color: #DDF0F1;
-  padding-block: rem(85);
+  padding-top: rem(81);
+  padding-bottom: rem(79);
 
   @include mq(md) {
     padding-block: rem(100);
