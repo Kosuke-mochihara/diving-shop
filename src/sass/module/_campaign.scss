@@ -9,6 +9,7 @@
 .campaign__swiper {
   margin-top: rem(31);
   margin-right: calc(50% - 50vw);
+  overflow: hidden;
 
   @include mq(md) {
     margin-top: rem(42);

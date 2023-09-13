@@ -8,7 +8,7 @@
 
   @include mq(md) {
     background-image: url(../images/common/blog-bg.jpg);
-    background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -16,10 +16,6 @@
     position: absolute;
     z-index: -100;
   }
-}
-
-.blog__inner.inner {
-  padding-inline: rem(21);
 }
 
 .blog__title {
@@ -34,12 +30,24 @@
 
   @include mq(md) {
     margin-top: rem(80);
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: rem(40);
+    column-gap: rem(40);
   }
 }
 
-.blog__item {}
+.blog__item {
+  width: rem(600);
+  max-width: 100%;
+  margin-inline: auto;
+
+
+  @include mq(md) {
+    width: rem(333);
+    max-width: 100%;
+  }
+}
 
 .blog__item:nth-child(n+2) {
   margin-top: rem(40);

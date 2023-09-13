@@ -94,12 +94,12 @@
 }
 
 .price__img {
-
   @include mq(md) {
     aspect-ratio: 492 / 746;
     overflow: hidden;
     display: inline-block;
   }
+  
 }
 
 .price__img img {

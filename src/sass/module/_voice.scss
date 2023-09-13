@@ -20,8 +20,10 @@
 
   @include mq(md) {
     margin-top: rem(32);
-    display: flex;
-    gap: rem(40);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: rem(40);
+    column-gap: rem(40);
   }
 }
 
