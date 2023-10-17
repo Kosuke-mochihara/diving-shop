@@ -35,6 +35,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       spaceBetween: 24, // カードの間隔
       grabCursor: true, // マウスオーバー時にカーソルをグラブ状態にするか
       loop: true, // ループさせるかどうか
+      loop: false, // ループさせるかどうか
         autoplay: {
         delay: 2500, // 2.5秒ごとにスライド
         disableOnInteraction: false, // ユーザーのスワイプ操作後も自動再生を続行

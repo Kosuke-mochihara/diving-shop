@@ -7,40 +7,6 @@
   }
 }
 
-.voice__inner {
-
-}
-
-.voice__title {
-
-}
-
-.voice__items {
-  margin-top: rem(46);
-
-  @include mq(md) {
-    margin-top: rem(32);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: rem(40);
-    column-gap: rem(40);
-  }
-}
-
-.voice__item {
-  width: rem(520);
-  max-width: 100%;
-  margin-inline: auto;
-}
-
-.voice__item:nth-child(n+2) {
-  margin-top: rem(40);
-
-  @include mq(md) {
-    margin-top: 0;
-  }
-}
-
 .voice__btn {
   text-align: center;
   margin-top: rem(40);
@@ -52,6 +18,7 @@
 
 .voice__seahorse {
   display: none;
+
   @include mq(md) {
     display: block;
     position: absolute;
@@ -59,4 +26,3 @@
     right: calc(50% - rem(540));
   }
 }
-

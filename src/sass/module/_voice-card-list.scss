@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.voice-card-list {
+  margin-top: rem(46);
+
+  @include mq(md) {
+    margin-top: rem(32);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: rem(40);
+    column-gap: rem(40);
+  }
+}
+
+.voice-card-list__item {
+  width: 100%;
+  margin-inline: auto;
+}
+
+.voice-card-list__item:nth-child(n+2) {
+  margin-top: rem(40);
+
+  @include mq(md) {
+    margin-top: 0;
+  }
+}

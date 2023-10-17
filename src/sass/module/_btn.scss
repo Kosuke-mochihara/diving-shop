@@ -1,10 +1,5 @@
 @use "global" as *;
 
-
-
-// btn
-@use "global" as *;
-
 .btn {
   position: relative;
   width: rem(202);
@@ -32,6 +27,7 @@
   width: 100%;
   height: 100%;
   z-index: 100;
+  border: rem(1) solid $green;
 }
 
 .btn__base::first-letter{
@@ -55,7 +51,7 @@
 .btn:hover .btn__base {
   color: $green;
   background-color: $white;
-  border: 1px solid $green;
+  border: rem(1) solid $green;
 }
 
 .btn:hover .btn__base {
@@ -73,9 +69,9 @@
   left: 0;
   width: rem(202);
   height: rem(54);
-  transform: translate(4px, 4px);
+  transform: translate(rem(4), rem(4));
   background-color: transparent;
-  border: 1px solid $green;
+  border: rem(1) solid $green;
   z-index: 10;
 }
 
@@ -87,7 +83,7 @@
 .btn--white:hover .btn__base {
   color: $white;
   background-color: $green;
-  border: 1px solid $white;
+  border: rem(1) solid $white;
 }
 
 .btn--white .btn__base span{
@@ -99,5 +95,45 @@
 }
 
 .btn--white .btn__shadow {
-  border: 1px solid $white;
+  border: rem(1) solid $white;
+}
+
+.btn__base {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: rem(14);
+  line-height: rem(54);
+  font-family: $gotu-font-family;
+  text-align: center;
+  color: $white;
+  background-color: $green;
+  display: inline-block;
+  transition: .3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.btn__base::after {
+  background: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+  z-index: -1;
+}
+
+.btn__base:hover {
+  color: $green;
+}
+
+.btn__base:hover::after {
+  transform: scale(1, 1);
 }

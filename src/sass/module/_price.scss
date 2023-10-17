@@ -84,6 +84,12 @@
   }
 }
 
+.price__lv2Item span {
+  @include mq() {
+    margin-left: rem(32);
+  }
+}
+
 .price__img-box {
 
   @include mq(md) {
@@ -124,6 +130,6 @@
     position: absolute;
     display: block;
     bottom: rem(-36);
-    left: calc(50% - rem(621));
+    left: calc(50% - min(48%,rem(621)));
   }
 }

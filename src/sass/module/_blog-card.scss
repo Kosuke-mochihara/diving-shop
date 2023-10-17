@@ -9,19 +9,23 @@
   height: 100%;
 }
 
-.blog-card__head {
-  width: 100%;
-
-  @include mq(md) {
-    width: rem(301);
-    max-width: 100%;
-  }
-}
-
 .blog-card__img {
   aspect-ratio: 301 / 201;
   overflow: hidden;
   display: inline-block;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.blog-card:hover .blog-card__img {
+  opacity: 0.8;
+}
+
+.blog-card__head {
+  width: 100%;
+
+  @include mq(md) {
+    width: 100%;
+  }
 }
 
 .blog-card__img img {

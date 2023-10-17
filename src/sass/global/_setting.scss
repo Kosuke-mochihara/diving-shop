@@ -32,6 +32,7 @@ $lato-font-family: 'Lato', sans-serif;
 body {
   font-family: $base-font-family;
   color: $black;
+  overflow-x: hidden;
 }
 
 // フォントウェイト
