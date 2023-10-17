@@ -24,12 +24,12 @@
 .campaign__slide {
   max-width: rem(280);
   width: 100%;
-  height: rem(370);
+  height: auto;
 
 
   @include mq(md) {
     max-width: rem(333);
-    height: rem(450);
+    width: 100%;
   }
 }
 
