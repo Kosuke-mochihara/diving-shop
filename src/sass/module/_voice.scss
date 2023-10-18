@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .voice {
-
   @include mq(md) {
     position: relative;
   }

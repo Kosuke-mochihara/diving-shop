@@ -9,11 +9,10 @@
   width: 100%;
 }
 
-.mv__content {
-
+.campaign__contents {
+  padding-bottom: rem(6);
+  padding-left: rem(2);
 }
-
-
 
 .mv__img img {
   height: 100%;
@@ -41,8 +40,8 @@
   padding-left: rem(21);
 
   @include mq(md) {
-   font-size: rem(80);
-   padding-left: rem(43);
+    font-size: rem(80);
+    padding-left: rem(43);
   }
 }
 
@@ -53,4 +52,3 @@
   line-height: 1;
   margin-top: rem(6);
 }
-

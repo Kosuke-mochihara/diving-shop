@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: rem(13);
-  
+
   @include mq(md) {
     column-gap: rem(0);
     grid-template-columns: repeat(4, 1fr);
@@ -25,8 +25,6 @@
     grid-row: initial;
   }
 }
-
-.item__list {}
 
 .item__title {
   position: relative;
@@ -52,11 +50,12 @@
   max-height: rem(18);
   height: 100%;
   left: rem(-22);
-  top: 50%;
-  transform: translateY(-50%);
+  
+  @include mq() {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
-
-.item__lv2Lists {}
 
 .item__lv2Item {
   margin-top: rem(18);

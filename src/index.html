@@ -51,10 +51,7 @@
 
     <!-- JavaScript -->
     <!-- swiper -->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
-    ></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./assets/js/jquery.inview.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
@@ -583,7 +580,9 @@
                       </div>
                       <div class="campaign-card__footer">
                         <div class="campaign-card__category-block">
-                          <p class="campaign-card__category">体験ダイビング</p>
+                          <div class="campaign-card__category-block">
+                            <p class="campaign-card__category">体験ダイビング</p>
+                          </div>
                         </div>
                         <p class="campaign-card__title">ナイトダイビング</p>
                         <p class="campaign-card__text">
@@ -1122,6 +1121,11 @@
         </div>
       </div>
     </main>
+
+    <div class="to-top" id="js-page-top">
+      <a href="#"></a>
+    </div>
+
     <footer class="footer top-footer">
       <div class="footer__inner inner">
         <div class="footer__contents">
@@ -1197,7 +1201,7 @@
             <li class="item__list">
               <p class="item__title"><a href="#">よくある質問</a></p>
               <p class="item__title">
-                <a href="#">プライバシー<br />ポリシー</a>
+                <a href="#">プライバシー<br class="u-mobile">ポリシー</a>
               </p>
               <p class="item__title"><a href="#">利用規約</a></p>
               <p class="item__title"><a href="#">お問い合わせ</a></p>

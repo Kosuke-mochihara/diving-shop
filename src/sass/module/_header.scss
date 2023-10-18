@@ -28,12 +28,12 @@
 .header__logo {
   z-index: 9999;
 
-   @include mq(md) {
+  @include mq(md) {
     max-width: rem(133);
     width: 100%;
     max-height: rem(50);
     height: 100%;
-   }
+  }
 }
 
 .header__pc-nav {
@@ -48,7 +48,7 @@
     display: flex;
     gap: rem(40);
   }
-  
+
   @include mq(md) {
     display: flex;
     gap: rem(25);
@@ -56,7 +56,6 @@
 }
 
 .header__item {
-
   @include mq(md) {
     color: $white;
     text-align: center;
@@ -65,8 +64,7 @@
 }
 
 .header__link {
-
-  @include mq(md) { 
+  @include mq(md) {
     position: relative;
     display: inline-block;
     padding-top: rem(26);
@@ -76,23 +74,20 @@
 
 .header__link::after {
   content: '';
-  /*絶対配置で線の位置を決める*/
   position: absolute;
   bottom: rem(20);
   left: 0;
-  /*線の形状*/
   width: 100%;
   height: rem(1);
-  background:$white;
-  /*アニメーションの指定*/
+  background: $white;
   transition: all .3s;
-  transform: scale(0, 1);/*X方向0、Y方向1*/
-  transform-origin: center top;/*上部中央基点*/
+  transform: scale(0, 1);
+  transform-origin: center top;
 }
 
 /*現在地とhoverの設定*/
 .header__link:hover::after {
-  transform: scale(1, 1);/*X方向にスケール拡大*/
+  transform: scale(1, 1);
 }
 
 .header__title {
@@ -103,7 +98,7 @@
   line-height: calc(18/18);
 }
 
-.header__title--accent::first-letter{
+.header__title--accent::first-letter {
   text-transform: uppercase;
 }
 
@@ -118,11 +113,9 @@
   margin-top: rem(4);
 }
 
-
-
 .header__drawer {
   padding: 0;
-  
+
   @include mq(md) {
     display: none;
   }
@@ -145,7 +138,6 @@
 }
 
 .header__drawer-menu.is-open {
-
   transform: translateX(0);
 }
 

@@ -34,14 +34,12 @@
 }
 
 .section-title--accent .section-title__main::first-letter {
-
   @include mq(md) {
     color: $white;
   }
 }
 
 .section-title--accent .section-title__sub {
-
   @include mq(md) {
     color: $white;
   }

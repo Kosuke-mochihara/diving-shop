@@ -21,11 +21,7 @@
   }
 }
 
-.contact__inner.inner {
-
-}
-
-.contact__box{
+.contact__box {
   padding-top: rem(80);
   padding-bottom: rem(100);
 
@@ -104,7 +100,7 @@
   text-align: center;
 
   @include mq(md) {
-  text-align: left;
+    text-align: left;
     margin-top: 0;
   }
 }
@@ -143,6 +139,7 @@
 .contact__contact-box {
   text-align: center;
   margin-top: rem(32);
+
   @include mq(md) {
     border-left: 1px solid $green;
     padding-left: rem(81);
@@ -151,7 +148,6 @@
 }
 
 .contact-title {
-
   @include mq(md) {
     margin-top: rem(18);
   }

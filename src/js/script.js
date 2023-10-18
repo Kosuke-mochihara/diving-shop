@@ -86,3 +86,42 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
 });
+
+
+// スムーススクロール
+$(function () { 
+  var pagetop = $('#js-page-top'); 
+  pagetop.hide(); 
+  $(window).scroll(function () { 
+    if ($(this).scrollTop() > 500) { //100pxスクロールしたら表示
+      pagetop.fadeIn(); //0.5秒かけて表示
+    } else { //100px以下だったら隠す
+      pagetop.fadeOut(); //0.5秒かけて隠す
+    }
+
+    var scrollHeight = $(document).height();
+    var scrollPosition = $(window).height() + $(window).scrollTop();
+    var footHeight = $("footer").innerHeight();
+
+    if (scrollHeight - scrollPosition <= footHeight) {
+      var offset = footHeight + 1.25 * parseFloat(pagetop.css('font-size'));
+        pagetop.css({
+        position: "absolute",
+        bottom: offset + "px",
+      });
+    } else {
+      pagetop.css({
+        position: "fixed",
+        bottom: "1.25rem",
+      });
+    }
+  });
+
+  pagetop.click(function () { // クリックされたら上に戻る
+    $('body, html').animate({ // 0.5秒かけてトップへ移動
+        scrollTop: 0 // ページトップまでスクロール
+    }, 500); // 0.5秒かけてトップへ移動
+    return false;
+  });
+
+});

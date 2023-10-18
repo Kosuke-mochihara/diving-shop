@@ -7,7 +7,7 @@
   display: inline-block;
 }
 
-.btn:hover  {
+.btn:hover {
   opacity: 1;
 }
 
@@ -30,7 +30,7 @@
   border: rem(1) solid $green;
 }
 
-.btn__base::first-letter{
+.btn__base::first-letter {
   text-transform: uppercase;
 }
 
@@ -86,11 +86,11 @@
   border: rem(1) solid $white;
 }
 
-.btn--white .btn__base span{
+.btn--white .btn__base span {
   background-image: url(../images/common/arrow-green.svg);
 }
 
-.btn--white:hover .btn__base span{
+.btn--white:hover .btn__base span {
   background-image: url(../images/common/arrow.svg);
 }
 

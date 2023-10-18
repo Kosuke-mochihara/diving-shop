@@ -1,18 +1,6 @@
 @use "global" as *;
 
-.about-content {
-
-}
-
-.about-content__img-box {
-
-}
-
-.about-content__img {
-
-}
-
-.about-content__wrappers  {
+.about-content__wrappers {
   @include mq(md) {
     position: relative;
   }
@@ -34,7 +22,6 @@
 }
 
 .about-content__title-box {
-
   @include mq(md) {
     width: rem(400);
     max-width: 100%;
@@ -70,7 +57,7 @@
   font-size: rem(16);
   font-weight: $regular;
   line-height: calc(24/16);
-  
+
   @include mq(md) {
     font-size: rem(16);
     font-weight: $regular;
