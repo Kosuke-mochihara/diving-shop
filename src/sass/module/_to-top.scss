@@ -2,9 +2,15 @@
 
 .to-top {
   position: fixed;
-  right: rem(40);
-  bottom: rem(40);
   z-index: 10;
+  right: rem(15);
+  bottom: rem(16);
+  
+  @include mq() {
+    right: rem(20);
+    bottom: rem(20);
+    
+  }
 }
 
 .to-top a {
