@@ -7,8 +7,10 @@
   display: inline-block;
 }
 
-.btn:hover {
-  opacity: 1;
+@media (hover: hover) {
+  .btn:hover {
+    opacity: 1;
+  }
 }
 
 .btn__base {
@@ -48,19 +50,25 @@
   transition: .3s ease-in-out;
 }
 
-.btn:hover .btn__base {
-  color: $green;
-  background-color: $white;
-  border: rem(1) solid $green;
+@media (hover: hover) {
+  .btn:hover .btn__base {
+    color: $green;
+    background-color: $white;
+    border: rem(1) solid $green;
+  }
 }
 
-.btn:hover .btn__base {
-  color: $green;
-  z-index: 100;
+@media (hover: hover) {
+  .btn:hover .btn__base {
+    color: $green;
+    z-index: 100;
+  }
 }
 
-.btn:hover .btn__base span {
-  background-image: url(../images/common/arrow-green.svg);
+@media (hover: hover) {
+  .btn:hover .btn__base span {
+    background-image: url(../images/common/arrow-green.svg);
+  }
 }
 
 .btn__shadow {
@@ -80,18 +88,22 @@
   background-color: $white;
 }
 
-.btn--white:hover .btn__base {
-  color: $white;
-  background-color: $green;
-  border: rem(1) solid $white;
+@media (hover: hover) {
+  .btn--white:hover .btn__base {
+    color: $white;
+    background-color: $green;
+    border: rem(1) solid $white;
+  }
 }
 
 .btn--white .btn__base span {
   background-image: url(../images/common/arrow-green.svg);
 }
 
-.btn--white:hover .btn__base span {
-  background-image: url(../images/common/arrow.svg);
+@media (hover: hover) {
+  .btn--white:hover .btn__base span {
+    background-image: url(../images/common/arrow.svg);
+  }
 }
 
 .btn--white .btn__shadow {
@@ -116,24 +128,30 @@
   z-index: 100;
 }
 
-.btn__base::after {
-  background: $white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 100%;
-  transform: scale(0, 1);
-  transform-origin: left top;
-  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
-  z-index: -1;
+@media (hover: hover) {
+  .btn__base::after {
+    background: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+  }
 }
 
-.btn__base:hover {
-  color: $green;
+@media (hover: hover) {
+  .btn__base:hover {
+    color: $green;
+  }
 }
 
-.btn__base:hover::after {
-  transform: scale(1, 1);
+@media (hover: hover) {
+  .btn__base:hover::after {
+    transform: scale(1, 1);
+  }
 }
