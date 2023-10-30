@@ -127,3 +127,8 @@ $(function () {
     return false;
   });
 });
+
+// ドロワーの設定
+document.getElementById('js-headerInner').addEventListener('click', function () {
+  this.classList.toggle('is-active');
+});

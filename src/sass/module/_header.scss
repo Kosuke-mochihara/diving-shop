@@ -12,7 +12,7 @@
   height: 100%;
 
   @include mq(md) {
-    min-height: rem(90);
+    height: rem(90);
   }
 }
 
@@ -24,6 +24,11 @@
   align-items: center;
 }
 
+.header__inner.is-active{
+  background-color: $green;
+  position: relative;
+  z-index: 9999;
+}
 
 .header__logo {
   z-index: 9999;
@@ -132,7 +137,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9998;
+  z-index: 1000;
   transform: translateX(100%);
   transition: ease .3s;
 }
