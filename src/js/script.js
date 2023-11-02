@@ -129,6 +129,6 @@ $(function () {
 });
 
 // ドロワーの設定
-document.getElementById('js-headerInner').addEventListener('click', function () {
-  this.classList.toggle('is-active');
+document.querySelector('.js-hamburger').addEventListener('click', function () {
+  document.querySelector('.header__inner').classList.toggle('is-active');
 });

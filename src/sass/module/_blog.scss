@@ -2,26 +2,28 @@
 
 .blog {
   position: relative;
+
+  @include mq() {
+    padding-top: rem(100);
+  }
 }
 
-.blog__bg {
+.blog::before {
   @include mq(md) {
+    content: "";
+    position: absolute;
     background-image: url(../images/common/blog-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: rem(500);
-    position: absolute;
     z-index: -100;
+    top: 0;
   }
 }
 
-.blog__title {
-  @include mq(md) {
-    padding-top: rem(100);
-  }
-}
+.blog__title {}
 
 .blog__btn {
   text-align: center;

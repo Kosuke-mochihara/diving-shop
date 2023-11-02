@@ -42,7 +42,7 @@
   content: "";
   position: absolute;
   background-image: url(../images/common/star-fish.png);
-  background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   max-width: rem(18);
@@ -50,7 +50,7 @@
   max-height: rem(18);
   height: 100%;
   left: rem(-22);
-  
+
   @include mq() {
     top: 50%;
     transform: translateY(-50%);
