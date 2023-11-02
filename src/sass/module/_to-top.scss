@@ -5,11 +5,11 @@
   z-index: 10;
   right: rem(15);
   bottom: rem(16);
-  
+
   @include mq() {
     right: rem(20);
     bottom: rem(20);
-    
+
   }
 }
 
