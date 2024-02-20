@@ -63,8 +63,8 @@
 }
 
 .price__hr {
-  margin-block-start: rem(3);
-  margin-block-end: rem(-1);
+  margin-block: rem(3);
+  background-color: $green;
 }
 
 .price__lv2Item {

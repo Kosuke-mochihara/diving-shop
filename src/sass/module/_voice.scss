@@ -6,6 +6,23 @@
   }
 }
 
+.voice::before {
+  
+  @include mq(md) {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: rem(-65);
+    right: calc(50% - min(48%, rem(540)));
+    background-image: url(../images/common/seahorse.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: rem(71);
+    height: rem(162);
+  }
+}
+
 .voice__btn {
   text-align: center;
   margin-top: rem(40);
@@ -15,13 +32,14 @@
   }
 }
 
-.voice__seahorse {
-  display: none;
+// .voice__seahorse {
+//   display: none;
 
-  @include mq(md) {
-    display: block;
-    position: absolute;
-    bottom: rem(-65);
-    right: calc(50% - min(48%, rem(540)));
-  }
-}
+
+//   @include mq(md) {
+//     display: block;
+//     position: absolute;
+//     bottom: rem(-65);
+//     right: calc(50% - min(48%, rem(540)));
+//   }
+// }

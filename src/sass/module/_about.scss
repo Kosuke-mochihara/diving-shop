@@ -4,23 +4,29 @@
   position: relative;
 }
 
-.about__wrapper {
-  margin-top: rem(31);
-
-  @include mq(md) {
-    margin-top: rem(40);
-  }
-}
-
-.about__coral-reef {
+.about::before {
   display: none;
 
   @include mq(md) {
+    background-image: url(../images/common/coral-reef.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
     display: block;
     width: rem(194);
     height: rem(181);
     position: absolute;
     bottom: rem(-91);
     right: calc(50% - min(48%, rem(640)));
+  }
+}
+
+.about__wrapper {
+  margin-top: rem(31);
+
+  @include mq(md) {
+    margin-top: rem(40);
   }
 }
